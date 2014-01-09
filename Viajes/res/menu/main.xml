@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    <item
+        android:id="@+id/acercaDe"
+        android:title="Acerca de "
+        android:icon="@android:drawable/ic_menu_agenda"
+         android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/dibujo"
+        android:title="Dibujo"
+        android:icon="@android:drawable/ic_menu_agenda"
+         android:showAsAction="never"/>
+
+</menu>
