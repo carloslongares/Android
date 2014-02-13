@@ -38,6 +38,34 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    />
+		<ImageView 
+	    android:id="@+id/fotoSpinner"
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"
+	    />
+		
+
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="Cantidad:"
+	    />
+	   
+	   <EditText 
+	       android:id="@+id/dinero"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:inputType="numberDecimal"
+	       />
+	
+	<Button 
+	    android:id ="@+id/btnCambio"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Pagar"
+	    />
+	
+
 
 
 </LinearLayout>

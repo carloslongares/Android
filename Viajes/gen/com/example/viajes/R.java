@@ -21,27 +21,36 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int ups=0x7f020001;
+        public static final int america=0x7f020000;
+        public static final int asia=0x7f020001;
+        public static final int auropa=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int ups=0x7f020004;
     }
     public static final class id {
-        public static final int acercaDe=0x7f080012;
+        public static final int acercaDe=0x7f080018;
         public static final int btnCalcula=0x7f080009;
+        public static final int btnCambio=0x7f080017;
+        public static final int cambioDinero=0x7f080010;
         public static final int campoContinente=0x7f08000b;
         public static final int campoPrecio=0x7f08000c;
         public static final int campoZona=0x7f08000a;
         public static final int checkRegalo=0x7f080006;
         public static final int checkTarjeta=0x7f080007;
-        public static final int dibujo=0x7f080013;
+        public static final int dibujo=0x7f080019;
+        public static final int dinero=0x7f080016;
+        public static final int dineroIntroducido=0x7f08000e;
         public static final int fotoPortada=0x7f080002;
+        public static final int fotoSpinner=0x7f08000d;
         public static final int grpRadio=0x7f080003;
         public static final int normal=0x7f080004;
         public static final int peso=0x7f080008;
-        public static final int resultadoCosteFinal=0x7f080011;
-        public static final int resultadoDecoracion=0x7f080010;
-        public static final int resultadoPesp=0x7f08000f;
-        public static final int resultadoTarifa=0x7f08000e;
-        public static final int resultadoZona=0x7f08000d;
+        public static final int precioFinalCambio =0x7f08000f;
+        public static final int resultadoCosteFinal=0x7f080015;
+        public static final int resultadoDecoracion=0x7f080014;
+        public static final int resultadoPesp=0x7f080013;
+        public static final int resultadoTarifa=0x7f080012;
+        public static final int resultadoZona=0x7f080011;
         public static final int spinner=0x7f080001;
         public static final int titulo=0x7f080000;
         public static final int urgente=0x7f080005;
@@ -49,7 +58,8 @@ public final class R {
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int desglose=0x7f030001;
-        public static final int pantallaresultado=0x7f030002;
+        public static final int pantallacambio=0x7f030002;
+        public static final int pantallaresultado=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;

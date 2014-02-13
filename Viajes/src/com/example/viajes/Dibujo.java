@@ -11,12 +11,14 @@ import android.graphics.RectF;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 public class Dibujo extends Activity {
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(new MiVista(this));
+		Toast.makeText(getApplicationContext(),"Pincha para pintar ", 100).show();
 	}
 
 }

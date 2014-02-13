@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
 	public String lugar;
 	public String tarifa;
 	public String decoracion ="";
+	public int foto;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -62,20 +63,26 @@ public class MainActivity extends Activity {
 				String zona=((Destino)parent.getAdapter().getItem(position)).getZona();
 				String continente= ((Destino)parent.getAdapter().getItem(position)).getContinente();
 				int precioElegido = ((Destino)parent.getAdapter().getItem(position)).getPrecio();
+				int fotos = ((Destino)parent.getAdapter().getItem(position)).getFoto();
 				if (zona.equalsIgnoreCase("Zona A")){
 					precio = precioElegido;
 					lugar= zona +" "+continente;
+					foto=fotos;
 					}
 				
 				if (zona.equalsIgnoreCase("Zona B")){
 					precio = precioElegido;
 					lugar= zona +" "+continente;
-					}
+					foto=fotos;	
+					Toast.makeText(getApplicationContext(), foto, 10).show();
+				}
 				
 				if (zona.equalsIgnoreCase("Zona C")){
 					precio = precioElegido;
 					lugar= zona +" "+continente;	
-					}	
+					foto=fotos;
+					Toast.makeText(getApplicationContext(), foto, 10).show();	
+				}	
 				}
 
 			@Override
@@ -153,7 +160,7 @@ public class MainActivity extends Activity {
 				bundle.putString("PESO", peso.getText().toString());
 				bundle.putString("DECORACION", decoracion);
 				bundle.putInt("PRECIO", precio);
-			
+				bundle.putInt("FOTO", foto);
 				intent.putExtras(bundle);
 				startActivity(intent);
 				
@@ -199,6 +206,7 @@ class AdaptadorDestinoSpinner extends ArrayAdapter<Destino>{
 		TextView lblZona;
 		TextView lblContinente;
 		TextView lblPrecio;
+		ImageView lblFoto;
 		
 	}
 	
@@ -228,6 +236,7 @@ class AdaptadorDestinoSpinner extends ArrayAdapter<Destino>{
 			holder.lblZona=(TextView)item.findViewById(R.id.campoZona);
 			holder.lblContinente= (TextView)item.findViewById(R.id.campoContinente);
 			holder.lblPrecio = (TextView)item.findViewById(R.id.campoPrecio);
+			holder.lblFoto=(ImageView)item.findViewById(R.id.fotoSpinner);
 			item.setTag(holder);
 			
 		}else
@@ -237,14 +246,15 @@ class AdaptadorDestinoSpinner extends ArrayAdapter<Destino>{
 		holder.lblZona.setText(destinos[position].getZona());
 		holder.lblContinente.setText(destinos[position].getContinente());
 		holder.lblPrecio.setText(Integer.toString(destinos[position].getPrecio()));
+		holder.lblFoto.setImageResource(destinos[position].getFoto());
 		
 		return (item);
 		}	
 	
 		private static Destino[] destinos = new Destino[]{
-				new Destino("Zona A","Asia y Oceania",30),
-				new Destino("Zona B","Ameria y Africa",20),
-				new Destino("Zona C","Europa",10)
+				new Destino("Zona A","Asia y Oceania",30,R.drawable.asia),
+				new Destino("Zona B","Ameria y Africa",20,R.drawable.america),
+				new Destino("Zona C","Europa",10,R.drawable.auropa)
 		};
 	
 		

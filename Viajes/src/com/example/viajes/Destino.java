@@ -5,11 +5,17 @@ public class Destino {
 	private String zona;
 	private String continente;
 	private int precio;
+	private int foto;
 	
-	public Destino(String zona, String continente, int precio) {
+	public Destino(String zona, String continente, int precio,int foto) {
 		this.zona=zona;
 		this.continente= continente;
 		this.precio=precio;
+		this.foto=foto;
+	}
+	
+	public int getFoto(){
+		return foto;
 	}
 	
 	public String getZona(){

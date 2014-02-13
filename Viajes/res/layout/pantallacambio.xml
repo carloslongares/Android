@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout 
+		android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="El dinero introducido fue: "/>
+		<TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/dineroIntroducido"
+	    	/>
+    </LinearLayout>
+    
+	
+	<LinearLayout 
+		android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="El dinero a pagar es: "/>
+		<TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/precioFinalCambio	"
+	    	/>
+    </LinearLayout>
+	
+	<LinearLayout 
+		android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Su cambio es: "/>
+		<TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/cambioDinero"
+	    	/>
+    </LinearLayout>
+    
+    
+</LinearLayout>

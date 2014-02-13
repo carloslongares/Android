@@ -28,6 +28,11 @@
         <activity
             android:name="com.example.viajes.Dibujo">
         </activity>
+        
+        <activity
+            android:name="com.example.viajes.PantallaCombio">
+        </activity>
+        
     </application>
 
 </manifest>
